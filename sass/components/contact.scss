@@ -1,0 +1,43 @@
+.contact {
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    &-form {
+        font-size: 1.5rem;
+        color: var(--color-dark);
+        border: 0;
+        border-bottom: $border-tb;
+        font-weight: 500;
+        margin-bottom: 1.5rem; 
+        outline: none;
+        display: block;
+        width: 100%;
+        height: calc(1.5em + .75rem + 2px);
+        height: auto;
+
+        &:focus {
+            border-color: var(--color-pry1);
+        }
+    }
+
+    .text-area {
+        resize: none;
+    }
+
+    .contact-send-btn {
+        font-size: 1.5rem;
+        padding: .7rem 1.5rem;
+        background-image: linear-gradient(to right, var(--color-pry1), var(--color-pry2));
+        color: var(--color-white);
+        outline: none;
+        margin-bottom: 2rem;
+        border-radius: .3rem;
+    }
+}

@@ -1,0 +1,201 @@
+.events {
+    //Events 1
+    .events-1 {
+        position: relative;
+        height: 45rem;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .01)),url(../img/nbe.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            height: 34rem;
+        }
+       
+    }
+     
+    .events-1-text {
+        position: absolute;
+        top: 86%;
+        left: 10%;
+        height: 2.3rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            top: 85%;
+            height: 2.5rem;
+            left: 9%;
+        }
+
+        p {
+            font-size: 2.5rem;
+            color: var(--color-white);
+            padding-right: 1.5rem;
+            margin: 0;
+            position: relative;
+
+            @media only screen and (max-width: $xlarge-screen) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $large-screen) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $medium-screen) {
+                font-size: 1.5rem;
+            }
+
+           
+        }
+    
+        img {
+            max-height: 2rem;
+        }
+    }
+
+    //Events 2
+    .events-2 {
+        position: relative;
+        height: 45rem;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .01)),url(../img/ndi.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            height: 34rem;
+        }
+       
+    }
+     
+    .events-2-text {
+        position: absolute;
+        top: 86%;
+        left: 10%;
+        height: 2.3rem;
+        padding-left: 1rem;
+        padding-right: 3rem;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            top: 85%;
+            height: 2.5rem;
+            left: 9%;
+        }
+    
+        p {
+            font-size: 2.5rem;
+            color: var(--color-white);
+            padding-right: 1.5rem;
+            margin: 0;
+
+            @media only screen and (max-width: $xlarge-screen) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $large-screen) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $medium-screen) {
+                font-size: 1.5rem;
+            }
+        }
+    
+        img {
+            max-height: 2rem;
+        }
+    }
+
+    //Events 3
+    .events-3 {
+        position: relative;
+        height: 45rem;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .01)),url(../img/nsklg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            height: 34rem;
+        }
+       
+    }
+     
+    .events-3-text {
+        position: absolute;
+        top: 86%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);;
+        -moz-transform: translate(-50%, -50%);;
+        -o-transform: translate(-50%, -50%);;
+        -ms-transform: translate(-50%, -50%);;
+
+        height: 2.3rem;
+        padding-left: 5rem;
+
+        @media only screen and (max-width: $xlarge-screen) {
+            top: 85%;
+            height: 2.5rem;
+            left: 30%;
+        }
+
+        @media only screen and (max-width: $small-screen) {
+            top: 82%;
+            height: 2.5rem;
+            left: 34%;
+        }
+    
+        p {
+            font-size: 2.5rem;
+            color: var(--color-white);
+            padding-right: 1rem;
+            margin: 0;
+
+            @media only screen and (max-width: $xlarge-screen) {
+                font-size: 2rem;
+            }
+
+            @media only screen and (max-width: $large-screen) {
+                font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $medium-screen) {
+                font-size: 1.5rem;
+            }
+        }
+    
+        img {
+            max-height: 2.2rem;
+        }
+    }
+}
+
+.eventsAndProjects {
+
+    &-heading {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        border-top: $border-tb;
+        margin-bottom: 0;
+    }
+
+    &-type {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--color-text3);
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background: var(--color-pry3);
+            height: 1px;
+            bottom: 0;
+            left: 50%;
+            width: 2rem;
+            transform: translate(-50%);
+
+        }
+    }
+}
+

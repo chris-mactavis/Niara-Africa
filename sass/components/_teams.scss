@@ -1,0 +1,32 @@
+.niaraTeam {
+
+    &-container {
+        height: 100%;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.2);        
+
+        .img-container {
+            margin: 0 auto;
+            width: 80%;
+            border-radius: 50%;
+            background-image: radial-gradient(var(--color-white), var(--bg-team-color), var(--bg-team-color2), var(--bg-team-color2));
+            
+        }
+
+        .niaraDetails {
+            margin-top: 25px;
+            text-align: center;
+
+            &-name {
+                font-weight: bolder;
+                font-size: 2.4rem;
+            }
+
+            &-position {
+                font-size: 2rem;
+                letter-spacing: .2rem;
+            }
+        }
+    }
+}

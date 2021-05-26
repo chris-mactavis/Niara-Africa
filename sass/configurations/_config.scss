@@ -1,0 +1,42 @@
+// Font Stacks
+
+@mixin do-font-face($name, $file-name, $url, $type, $weight, $style){
+    @font-face {
+      font-family: $name;
+      @if $type == "ttf"{
+        src: url(#{$url + $file-name}.ttf) format('truetype');
+      }
+      font-weight: $weight;
+      font-style: $style;
+    }
+  }
+  
+  @include do-font-face('Apercu Pro', 'ApercuPro', '../fonts/Apercu', 'ttf', normal, normal);
+  @include do-font-face('Apercu Pro', 'ApercuPro-Medium', '../fonts/Apercu', 'ttf', 500, normal);
+  @include do-font-face('Gilroy', 'Gilroy-Extrabold', '../fonts/Gilroy', 'ttf', bold, normal);
+  @include do-font-face('Gilroy', 'Gilroy-Regular', '../fonts/Gilroy', 'ttf', normal, normal);
+
+  
+  $apercu      : 'Apercu Pro', sans-serif;
+  $gilroy     : 'Gilroy', sans-serif;
+  // $lee  : 'roy', sans-serif;
+ 
+
+
+  /// Responsive screen widths
+  $xlarge-screen: 86.25em; /// Original width = 1380px / 16px{default font size} = 87.5
+  $large-screen:  75.25em; /// Original width = 1204px / 16px{default font size} = 75.25
+  $medium-screen: 62em;    /// Original width = 992px / 16px{default font size} = 62
+  $small-screen: 47.75em;    /// Original width = 769px / 16px{default font size} = 47.75
+
+  //color for the featured links
+  .color-link {
+    color: var(--color-dark);
+
+    &:hover {
+      color: var(--color-text3);
+    }
+  }
+
+  // Border-bottom
+  $border-tb: 2px solid var(--color-dark);
